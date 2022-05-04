@@ -1,20 +1,27 @@
-.mainDash {
-  width: 95%;
+.rightSide {
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  /* padding-top: 1rem; */
   justify-content: space-evenly;
 }
 
 @media screen and (max-width: 1200px) {
-  .mainDash {
+  .rightSide {
     justify-content: flex-start;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .mainDash {
+  .rightSide {
+    width: 100%;
+    margin-top: 0;
+  }
+  .rightSide > div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
